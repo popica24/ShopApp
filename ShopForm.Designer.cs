@@ -34,6 +34,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.OrderBtn = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.SearchBox = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -97,20 +99,40 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(625, 555);
             this.flowLayoutPanel1.TabIndex = 3;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(42, 15);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Search";
+            // 
+            // SearchBox
+            // 
+            this.SearchBox.Location = new System.Drawing.Point(60, 9);
+            this.SearchBox.Name = "SearchBox";
+            this.SearchBox.Size = new System.Drawing.Size(577, 23);
+            this.SearchBox.TabIndex = 5;
+            this.SearchBox.TextChanged += new System.EventHandler(this.SearchBox_TextChanged);
+            // 
             // ShopForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 614);
+            this.Controls.Add(this.SearchBox);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.OrderBtn);
             this.Controls.Add(this.groupBox1);
             this.Name = "ShopForm";
-            this.Text = "ShopForm";
+            this.Text = "Foo Store";
             this.Load += new System.EventHandler(this.ShopForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -122,5 +144,7 @@
         private Button OrderBtn;
         private FlowLayoutPanel flowLayoutPanel1;
         private Label TheList;
+        private Label label2;
+        private TextBox SearchBox;
     }
 }

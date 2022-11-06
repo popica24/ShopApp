@@ -19,7 +19,7 @@ namespace ShopApp
 
         public override string ToString()
         {
-            return $"Name : {Name}\nDescription : {Description}\nPrice : {Price}\n Manufacturer : {ManufacturerDate}\n Expires : {ExpirationDate}";
+            return $"Description : {Description}\nPrice : {Price}\n Manufacturer : {ManufacturerDate.ToString("dd/MM/yyyy")}\n Expires : {ExpirationDate.ToString("dd/MM/yyyy")}";
         }
 
         public override bool Equals(object? obj)
