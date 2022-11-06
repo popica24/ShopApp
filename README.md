@@ -27,5 +27,4 @@ if (!File.Exists(Path.Combine(RootPath, FileName))) File.Create(Path.Combine(Roo
 Root = Path.Combine(RootPath, FileName);
 ```
 
-## License
-[MIT](https://pip.pypa.io/en/stable/)
+
