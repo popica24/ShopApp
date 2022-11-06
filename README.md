@@ -28,4 +28,4 @@ Root = Path.Combine(RootPath, FileName);
 ```
 
 ## License
-[MIT]()
+[pip](https://pip.pypa.io/en/stable/)
