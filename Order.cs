@@ -40,7 +40,12 @@ namespace ShopApp
      
         public Order(DateTime _DateOrdered, List<Product> _Basket, int _Count)
         {
-
+            var RootPath = ConfigurationManager.AppSettings["Orders"];
+            if (string.IsNullOrEmpty(RootPath))
+            {
+                RootPath = "Orders";
+            }
+            if (!Directory.Exists(RootPath)) Directory.CreateDirectory(RootPath);
             OrderID = GetNextOrderID();
             DateOrdered = _DateOrdered;
             Count = _Count;

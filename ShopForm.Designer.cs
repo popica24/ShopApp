@@ -46,7 +46,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(643, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(145, 555);
+            this.groupBox1.Size = new System.Drawing.Size(241, 555);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cart";
@@ -64,7 +64,7 @@
             // 
             this.Price.AutoSize = true;
             this.Price.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Price.Location = new System.Drawing.Point(75, 530);
+            this.Price.Location = new System.Drawing.Point(100, 529);
             this.Price.Name = "Price";
             this.Price.Size = new System.Drawing.Size(19, 21);
             this.Price.TabIndex = 1;
@@ -74,7 +74,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(6, 524);
+            this.label1.Location = new System.Drawing.Point(31, 523);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 28);
             this.label1.TabIndex = 0;
@@ -120,7 +120,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 614);
+            this.ClientSize = new System.Drawing.Size(896, 614);
             this.Controls.Add(this.SearchBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.flowLayoutPanel1);

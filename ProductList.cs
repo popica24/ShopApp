@@ -22,6 +22,7 @@ namespace ShopApp
         }
         public List<Product> GetData() {
             string Json = File.ReadAllText(Root);
+            if (string.IsNullOrEmpty(Json)) return new List<Product>();
             return JsonConvert.DeserializeObject<List<Product>>(Json);
         }
         public ProductList()
@@ -44,7 +45,7 @@ namespace ShopApp
             string Json = File.ReadAllText(Root);
             if (String.IsNullOrEmpty(Json))
             {
-                Products.Add(U);
+                this.Products.Add(U);
                 File.WriteAllText(Root, JsonConvert.SerializeObject(Products));
                 return;
             }

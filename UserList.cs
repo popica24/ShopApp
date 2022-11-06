@@ -39,6 +39,7 @@ namespace ShopApp
         public bool CheckCredidentials(User U)
         {
             string Json = File.ReadAllText(Root);
+            if (string.IsNullOrEmpty(Json)) return false; 
             var _Users = JsonConvert.DeserializeObject<List<User>>(Json);
           
             return _Users.Any(o => o.Equals(U));

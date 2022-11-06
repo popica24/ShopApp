@@ -14,7 +14,7 @@ namespace ShopApp
         public double Price { get; set; }
         public DateTime ManufacturerDate { get; set; }
         public int TypeId { get; set; }
-        public DateTime ExpirationDate { get; set; }
+        public DateTime ExpirationDate { get; set; } = DateTime.MaxValue;
         public int Ammount { get; set; } = 1;
 
         public override string ToString()
@@ -28,6 +28,17 @@ namespace ShopApp
           Product other = obj as Product;
 
             return other.Id == this.Id && other.Name == this.Name && other.Description == this.Description && other.Price == this.Price && this.ExpirationDate==other.ExpirationDate && this.ManufacturerDate==other.ManufacturerDate && this.TypeId==other.TypeId;
+        }
+        public Product(int id, string name, string description, double price, DateTime manufacturerDate, int typeId)
+        {
+            Id = id;
+            Name = name;
+            Description = description;
+            Price = price;
+            ManufacturerDate = manufacturerDate;
+            TypeId = typeId;
+          
+        
         }
     }
 }
