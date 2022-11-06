@@ -1,8 +1,8 @@
-#ShopApp
+# ShopApp
 
 Simple windows forms interface and local save files
 
-##Using
+## Using
 ```bash
 .NET Framework 6.0
 [Newtonsoft](https://www.newtonsoft.com/json)
@@ -14,7 +14,7 @@ Searching for a product (React-hook kinda).
 Adding the product to cart (multiple clicks on the product will increase the ammount added to the cart).
 Order placing (Json format).
 
-##Saved data
+## Saved data
 ```c#
 var RootPath = ConfigurationManager.AppSettings["Products"];
 string FileName = "PLACEHOLDER.json";
