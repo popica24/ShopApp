@@ -17,7 +17,7 @@ Order placing (Json format).
 
 ## Saved data
 ```c#
-var RootPath = ConfigurationManager.AppSettings["Products"];
+var RootPath = ConfigurationManager.AppSettings["PLACEHOLDER"];
 string FileName = "PLACEHOLDER.json";
 if (string.IsNullOrEmpty(RootPath))
 {
