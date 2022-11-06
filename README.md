@@ -5,7 +5,7 @@ Simple windows forms interface and local save files
 ## Using
 ```bash
 .NET Framework 6.0
-[Newtonsoft](https://www.newtonsoft.com/json)
+[Newtonsoft] (https://www.newtonsoft.com/json)
 ```
 ##Facilites
 
@@ -27,5 +27,5 @@ if (!File.Exists(Path.Combine(RootPath, FileName))) File.Create(Path.Combine(Roo
 Root = Path.Combine(RootPath, FileName);
 ```
 
-##License
+## License
 [MIT]()
