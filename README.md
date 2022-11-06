@@ -2,11 +2,11 @@
 
 Simple windows forms interface and local save files
 
-## Using
-```bash
+## Uses
+
 .NET Framework 6.0
-[Newtonsoft] (https://www.newtonsoft.com/json)
-```
+[Newtonsoft](https://www.newtonsoft.com/json)
+
 ##Facilites
 
 Sign Up/Login user (Json format).
@@ -28,4 +28,4 @@ Root = Path.Combine(RootPath, FileName);
 ```
 
 ## License
-[pip](https://pip.pypa.io/en/stable/)
+[MIT](https://pip.pypa.io/en/stable/)
